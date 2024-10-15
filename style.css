@@ -1,0 +1,64 @@
+@keyframes moveUpAnimation {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes moveDownAnimation {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: red;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+#replay-animation-button {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 0;
+    color: black;
+    font: 600 1.2rem Arial;
+    background: #fff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.550);
+}
+
+.avatar-container {    
+    position: absolute;
+    bottom: 0;
+    animation: moveUpAnimation 3s;
+}
+
+.circular-mask-image {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 768px) {
+    .avatar-container {
+        position: absolute;
+        top: 0;
+        animation: moveDownAnimation 3s; 
+    }
+}

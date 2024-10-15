@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Solutto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="startFullAnimation()">
+    <div id="logo-container">
+        <img 
+            src="https://storage.googleapis.com/mokaly_public/assets/images/mokaly_logo_white.svg" 
+            alt="logo" 
+            width="250"
+            height="250"
+        >
+        <button 
+            id="replay-animation-button" 
+            hidden="true" 
+            onclick="restartAnimation()"
+        >
+            Repetir Animação
+        </button>
+    </div>
+    <audio 
+        id="audio"
+        preload="auto"
+        src="https://b.mokaly.com/audios/matrix_room_enter.mp3"
+    ></audio>
+    <script src="script.js"></script>
+</body>
+</html>
